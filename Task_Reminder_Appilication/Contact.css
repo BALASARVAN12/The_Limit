@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+    background-color: orange;
+    font-family: 'Times New Roman', Times, serif;
+}
+img {
+    width: 115px;
+    height: 110px;
+    margin: 25px;
+    border-radius: 100px;
+}
+.navbar {
+    display: flex;
+
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    margin: 10px;
+}
+li {
+    list-style: none;
+}
+a {
+    font-size: 24px;
+    margin: 35px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(0, 0, 0);
+}
+button:hover {
+    color: cyan;
+}
+#contact {
+    position: relative;
+}
+#contact-box {
+    display: flex;           
+    margin: 0px 120px;
+    padding-bottom: 13px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+#contact-box form {
+    width: 35%;
+}
+#contact-box label {
+    font-size: 2.1rem;
+}
+.button {
+    padding: 6px 20px;
+    background-color: wheat;
+    border: 2px solid rgb(19, 18, 18);
+    color: black;
+    margin: 10px 175px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.h-primary {
+    padding: 0px 270px;
+    font-size: 2em;
+}
+iframe{
+    position: absolute;
+    right: 50px;
+    top: 25%
+}

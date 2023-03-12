@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <title>The Limit</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Images/logo1.jpg" alt="The Limit" class="logo">
+            </div>
+            <ul class="navlinks">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Tasks.html">Tasks</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html" class="login">Login</a></li>
+            </ul>
+            <div class="toogle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Tasks.html">Tasks</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Login.html" class="login">Login</a></li>
+        </div>
+    </header>
+</body>
+<script>
+    const tooglebtn = document.querySelector('.toogle_btn')
+    const toogleBtnIcon = document.querySelector('.toogle_btn i')
+    const dropdown_menu = document.querySelector('.dropdown_menu')
+    tooglebtn.onclick = function  () {
+        dropdown_menu.classList.toggle('open')
+        const isOpen = dropdown_menu.classList.contains('open')
+        toogleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+</html>

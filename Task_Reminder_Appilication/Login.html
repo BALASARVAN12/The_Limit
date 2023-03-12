@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+        <div class="login-page">
+          <div id="content">
+            <div id="content-wrapper">
+        <div id="form" class="row">
+                <div class="form-title">
+                    <img src="Images/logo1.jpg" alt="logo" id="brand-image" width="80px" height="80px">
+                </div> <br>
+                    <div id="social-providers" class="col-social-section">
+                        <div id="social-provider-text">Sign in with</div>
+                        <ul class="login-social">
+                                <li class="login-pf-social-link"><img src="Images/fb_icon.svg" alt="" width="35px" height="35px"></a></li>
+                                <li class="login-pf-social-link"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="" width="35px" height="38px"></a></li>
+                        </ul>
+                </div>
+            </div>        
+                <form id="login-email" action="Home.html"  name="form">
+                    <div id="use_email">or use your email address</div>
+                    <div class="login__field">
+                            <i class="icon fa fa-envelope"></i>
+                            <input tabindex="1" id="username" class="login__input" name="email" value=""  type="email" autocomplete="off" placeholder="Email"/>
+                            <div id="email_error">Please fill email your correctly</div>
+                    </div>
+    
+                    <div class="login__field">
+                        <i class="icon fa fa-lock"></i>
+                        <input tabindex="6" id="password" class="login__input" name="password" type="password" autocomplete="off" placeholder="Password"/>
+                        <div id="pass_error">Please enter correct password</div>
+                    </div>
+                    <div class="form-field">
+                        <button class="btn" type="submit">Sign in</button>
+                    </div>
+                    <div class="form-field">
+                        <p class="forgot_password"> <a href="#" style="text-decoration: none;">Forgot Password?</a></p>
+                        <p class="new_user">New User <a href="Signup.html" style="text-decoration: none;">Register?</a></p>
+                    </div>
+
+          </div>
+          </div>
+        </div>
+    
+        <script src="login.js"></script>
+</body>
+</html>
